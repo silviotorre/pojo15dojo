@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class EvenOrOdd {
 
    public static boolean isEven(int n) {
-      return n%2==0;
+      //return n%2==0;// uso del modulo
+      return (n & 1)==0; //bitwise AND (faster)
       
    }
 
